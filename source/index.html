@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"/>
+  <!-- Font Awesome -->
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <!-- Google Fonts Roboto -->
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+  />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css"/>
+
+  <!-- Custom styles -->
+  <style>
+    @media (max-width: 991.98px) {
+      #nav {
+        background-color: #fff;
+      }
+
+      .nav-link,
+      .navbar-toggler {
+        color: #4f4f4f !important;
+      }
+    }
+
+
+    @media (min-width: 992px) {
+      .rotate-lg {
+        transform: rotate(6deg);
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+<header>
+
+  <!-- Navbar -->
+  <nav id="nav" class="navbar navbar-expand-lg fixed-top shadow-0"
+       style=" transition: padding .5s ease-in-out, background-color .5s ease-in-out">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+              src="img/logo.jpg"
+              alt="logo"
+              loading="lazy"
+              width="100"
+          />
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#!">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#!">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#!">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#!">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav flex-row socials">
+          <!-- Icons -->
+          <li class="nav-item">
+            <a class="nav-link pe-2" href="#!">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#!">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#!">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-2" href="#!">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible wrapper -->
+
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <!--    split-screen-->
+  <div class="split-screen mb-10">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-lg-6 vh-100 d-flex flex-column">
+          <div class="h-100 d-flex justify-content-center align-items-center">
+            <div class="name text-center">
+              <h1 class="display-4">Marina Iutina</h1>
+              <h2 class="display-2 fw-bold text-uppercase">Frontend Developer</h2>
+            </div>
+          </div>
+          <div class="footer mt-auto d-flex justify-content-between align-items-center w-100 px-5 pb-5">
+
+            <i class="fab fa-github fa-lg"></i>
+            <hr class="hr col-3" style="height: 2px"></hr>
+            <button class="btn text-nowrap btn-primary btn-lg rounded-9">See my projects
+              <i class="fas fa-angle-down ms-2"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 vh-100 d-none d-lg-inline-block">
+          <!-- Carousel wrapper -->
+          <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                  type="button"
+                  data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide-to="0"
+                  class="active rounded-circle"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  style="height: 7px;width: 7px;"
+              ></button>
+              <button
+                  type="button"
+                  data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide-to="1"
+                  aria-label="Slide 2"
+                  class="rounded-circle"
+                  style="height: 7px;width: 7px;"
+              ></button>
+              <button
+                  type="button"
+                  data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide-to="2"
+                  aria-label="Slide 3"
+                  class="rounded-circle"
+                  style="height: 7px;width: 7px;"
+              ></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner shadow-5-strong" style="border-bottom-left-radius: 5rem">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <!--                <img src="img/3.jpg" class="d-block  vh-100 object-cover" alt="Sunset Over the City"/>-->
+                <div style=" background: url(../img/3.jpg);
+                     background-position: center;
+                     background-size: cover;
+                     height: 100vh;  "
+                ></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Figma/PSD to HTML</h3>
+                  <p>I can do it</p>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div style=" background: url(../img/1.jpg);
+                     background-position: center;
+                     background-size: cover;
+                     height: 100vh;  "
+                ></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>CSS/SCSS</h3>
+                  <p>I do it very good</p>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div style=" background: url(../img/2.jpg);
+                     background-position: center;
+                     background-size: cover;
+                     height: 100vh;  "
+                ></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Javascript</h3>
+                  <p>I'm the best of the best</p>
+                </div>
+              </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+                    data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel wrapper -->
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--    split-screen-->
+
+</header>
+<main>
+
+  <section class="mb-7 mb-lg-10 text-center projects">
+    <div class="container">
+      <h2 class="fw-bold mb-7 text-center">My projects</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-6 mb-lg-0">
+          <div class="card h-100 ">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <div class="ratio ratio-16x9">
+                <img src="https://mdbootstrap.com/img/new/textures/small/64.jpg" class="img-fluid object-cover"/>
+              </div>
+              <a href="#" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Metaverse 2.0</h5>
+              <p class="text-muted">
+                <small>Finished <u>10.11.2022</u> for
+                  <a href="" class="text-dark">Venom Tech</a></small>
+              </p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary mt-auto d-inline-block">Button1</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 mb-6 mb-lg-0">
+          <div class="card h-100 ">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <div class="ratio ratio-16x9">
+                <img src="https://mdbootstrap.com/img/new/textures/small/55.jpg" class="img-fluid object-cover"/>
+              </div>
+              <a href="#" data-mdb-toggle="modal" data-mdb-target="#exampleModal-2">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Trulala 1.0</h5>
+              <p class="text-muted">
+                <small>Finished <u>10.11.2022</u> for
+                  <a href=""" data-mdb-target="#exampleModal-2">Venom Tech</a></small>
+              </p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#!" class="btn btn-primary mt-auto">Button</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 mb-6 mb-lg-0 ">
+          <div class="card h-100">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <!--              class="ratio ratio-16x9"-->
+              <div>
+                <img src="https://mdbootstrap.com/img/new/textures/small/56.jpg" class="w-100 object-cover" alt="ddd"
+                     style="aspect-ratio: 16 / 9;"/>
+              </div>
+              <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal-3">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Kabbage</h5>
+              <p class="text-muted">
+                <small>Finished <u>10.11.2022</u> for
+                  <a href="" class="text-dark">Venom Tech</a></small>
+              </p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#!" class="btn btn-primary mt-auto">Button</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="modals">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title - 1</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gx-lg-5 align-items-center">
+              <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-100"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="px-4 py-5 px-md-5 text-white text-center">
+                          <h3 class="text-uppercase fw-bold mb-4">
+                            The future is <u style="color: hsl(210, 12%, 80%)">now</u>
+                          </h3>
+                          <p class="mb-0" style="color: hsl(210, 12%, 80%)">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Harum quia laboriosam error consequuntur fugit,
+                            doloribus rerum, iure nesciunt amet quidem veniam
+                            cupiditate hic fugiat dolore aperiam quisquam libero
+                            earum quibusdam?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-headset fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Support 24/7</p>
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil quisquam quibusdam modi sapiente magni molestias
+                      pariatur facilis reprehenderit facere aliquam ex.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Safe and solid</p>
+                    <p class="text-muted mb-0">
+                      Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio soluta,
+                      quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Extremely fast</p>
+                    <p class="text-muted mb-0">
+                      Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic voluptatibus
+                      dolores exercitationem? Facilis debitis aspernatur amet nisi iure eveniet facere?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Live analytics</p>
+                    <p class="text-muted mb-0">
+                      Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint, consectetur atque
+                      ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="#exampleModalLabel-2"
+         aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel-2">Modal title - 2</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gx-lg-5 align-items-center">
+              <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-100"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="px-4 py-5 px-md-5 text-white text-center">
+                          <h3 class="text-uppercase fw-bold mb-4">
+                            The future is <u style="color: hsl(210, 12%, 80%)">now</u>
+                          </h3>
+                          <p class="mb-0" style="color: hsl(210, 12%, 80%)">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Harum quia laboriosam error consequuntur fugit,
+                            doloribus rerum, iure nesciunt amet quidem veniam
+                            cupiditate hic fugiat dolore aperiam quisquam libero
+                            earum quibusdam?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-headset fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Support 24/7</p>
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil quisquam quibusdam modi sapiente magni molestias
+                      pariatur facilis reprehenderit facere aliquam ex.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Safe and solid</p>
+                    <p class="text-muted mb-0">
+                      Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio soluta,
+                      quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Extremely fast</p>
+                    <p class="text-muted mb-0">
+                      Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic voluptatibus
+                      dolores exercitationem? Facilis debitis aspernatur amet nisi iure eveniet facere?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Live analytics</p>
+                    <p class="text-muted mb-0">
+                      Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint, consectetur atque
+                      ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="#exampleModalLabel-3"
+         aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel-3">Modal title - 3</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row gx-lg-5 align-items-center">
+              <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-100"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="px-4 py-5 px-md-5 text-white text-center">
+                          <h3 class="text-uppercase fw-bold mb-4">
+                            The future is <u style="color: hsl(210, 12%, 80%)">now</u>
+                          </h3>
+                          <p class="mb-0" style="color: hsl(210, 12%, 80%)">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Harum quia laboriosam error consequuntur fugit,
+                            doloribus rerum, iure nesciunt amet quidem veniam
+                            cupiditate hic fugiat dolore aperiam quisquam libero
+                            earum quibusdam?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-headset fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Support 24/7</p>
+                    <p class="text-muted mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil quisquam quibusdam modi sapiente magni molestias
+                      pariatur facilis reprehenderit facere aliquam ex.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Safe and solid</p>
+                    <p class="text-muted mb-0">
+                      Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio soluta,
+                      quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Extremely fast</p>
+                    <p class="text-muted mb-0">
+                      Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic voluptatibus
+                      dolores exercitationem? Facilis debitis aspernatur amet nisi iure eveniet facere?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div class="flex-shrink-0">
+                    <div class="p-3 rounded-4 shadow-2-strong" style="background-color: hsl(204, 30%, 20%)">
+                      <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-4">
+                    <p class="fw-bold mb-1">Live analytics</p>
+                    <p class="text-muted mb-0">
+                      Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint, consectetur atque
+                      ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-me mb-10">
+    <div class="container">
+      <div class="row gx-0 align-items-center">
+
+        <!-- First column -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card me-lg-n3 rounded-7" style="background-color: hsla(0,0%,100%,.75);
+            backdrop-filter: blur(8px);
+            z-index: 1;
+              ">
+            <div class="card-body p-5">
+              <h2 class="card-title text-primary mb-4 text-center">Marabel mia</h2>
+              <p class="text-muted fw-bold fst-italic">I love you, I love you, I love you. That's all I want to say.
+                Until I find a way, I will
+                say the only words I know that you'll understand.</p>
+              <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
+                architecto blanditiis deleniti
+                nesciunt numquam perspiciatis rerum. Aperiam eum officiis quas. Ad alias animi aperiam asperiores
+                aspernatur beatae, corporis deleniti doloremque, ex impedit inventore ipsum, magnam modi officia q</p>
+              <p class="card-text text-muted">Some quick example text to build on the card title and make
+                nesciunt numquam perspiciatis rerum. Aperiam eum officiis quas. Ad alias animi aperiam asperiores
+                aspernatur beatae, corporis deleniti doloremque, ex impedit inventore ipsum, magnam modi officia quas
+                quidem quisquam recusandae rem repudiandae saepe unde ut vel voluptates. Labore?</p>
+              <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+              <button type="button" class="btn btn-primary mx-auto d-block">Push me</button>
+            </div>
+          </div>
+
+        </div>
+        <!-- First column -->
+
+        <!-- Second column -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="bg-image hover-overlay rotate-lg">
+            <img
+                src="https://mdbootstrap.com/img/new/standard/people/246.jpg"
+                class="w-100 rounded-7 shadow-4" alt=""/>
+            <div class="mask" style="background-color: hsla(0,0%,100%, 0.2)"></div>
+          </div>
+        </div>
+        <!-- Second column -->
+
+      </div>
+    </div>
+  </section>
+  <section class="testimonials mb-7 mb-lg-10 text-center">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Happy clients</h2>
+
+      <div class="row gx-lg-5">
+        <div class="col-lg-4 mb-8 mb-lg-0 position-relative">
+          <div class="rounded-7 p-4 shadow-3 h-100 " style="background-color: hsl(218, 62.2%, 95%)">
+            <hr class="hr hr-blurry">
+            <p class="text-muted mt-4 mb-2">Project Manager at Spotify</p>
+            <p class="h5 mb-4 text-primary">Garry Lindman</p>
+            <p class="pb-4 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
+              itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
+              ratione possimus quos suscipit, ratione nostrum cum odit.s suscipit,s suscipit,s
+            </p>
+          </div>
+          <img src="https://mdbootstrap.com/img/new/avatars/22.jpg"
+               class="w-100 rounded-7 mt-n5 shadow-5-strong position-absolute bottom start-50 translate-middle-x"
+               style="max-width: 100px" alt="Avatar"/>
+        </div>
+
+        <div class="col-lg-4 mb-8 mb-lg-0 position-relative">
+          <div class="rounded-7 p-4 shadow-3 h-100" style="background-color: hsl(218, 62.2%, 95%)">
+            <hr class="hr hr-blurry">
+            <p class="text-muted mt-4 mb-2">CEO at Reddit</p>
+            <p class="h5 mb-4 text-primary">Lisa Montessori</p>
+            <p class="pb-4 mb-4">
+              Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+              soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+              placeat facere possimus, omnis voluptas assumenda est omnis.
+            </p>
+          </div>
+          <img src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+               class="w-100 rounded-7 mt-n5 position-absolute bottom start-50 translate-middle-x shadow-5-strong"
+               style="max-width: 100px" alt="Avatar"/>
+
+        </div>
+        <div class="col-lg-4 mb-8 mb-lg-0 position-relative">
+          <div class="rounded-7 p-4 shadow-3 h-100" style="background-color: hsl(218, 62.2%, 95%)">
+            <hr class="hr hr-blurry">
+            <p class="text-muted mt-4 mb-2">Senior Product Designer at Twitter</p>
+            <p class="h5 mb-4 text-primary">Ozzy McRyan</p>
+            <p class="pb-4 mb-4">
+              Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+              eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
+              earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
+            </p>
+          </div>
+          <img src="https://mdbootstrap.com/img/new/avatars/25.jpg"
+               class="w-100 rounded-7 mt-n5 position-absolute bottom start-50 translate-middle-x shadow-5-strong"
+               style="max-width: 100px" alt="Avatar"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts mb-7 mb-lg-10">]
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <form action="#" class="p-5 shadow-4-strong rounded-7 me-lg-n5 position-relative" style="z-index: 9;
+          background-color: hsla(0, 0%, 100%, 0.55);
+          backdrop-filter: blur(30px);
+              ">
+            <div class="form-outline mb-4">
+              <input type="text" class="form-control" id="name">
+              <label class="form-label" for="name">Name</label>
+            </div>
+            <div class="form-outline mb-4 ">
+              <input type="text" class="form-control" id="email">
+              <label class="form-label" for="email">Email address</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="message" rows="5"></textarea>
+              <label class="form-label" for="message">Message</label>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="input" checked>
+                <label class="form-check-label" for="input">Send me a copy of this message</label>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block text-uppercase mt-3">Send</button>
+
+
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <iframe class="rounded-7 shadow-3-strong"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45879.16877035953!2d12.533487572656094!3d44.053455947768285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3a48fa6592b%3A0xc1f284db17f1449d!2z0KDQuNC80LjQvdC4LCBQcm92aW5jZSBvZiBSaW1pbmksINCY0YLQsNC70LjRjw!5e0!3m2!1sru!2sru!4v1682672170253!5m2!1sru!2sru"
+                  height="650"
+                  style="border:0;
+                  z-index: 0;
+                  width: 100%;"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</main>
+<footer>
+  <div class="text-center"
+       style="background-color: hsl(218, 62.2%, 95%); padding: 30px"
+
+  >
+    <div class="text-center ">
+      <button class="btn btn-primary btn-floating me-3">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button class="btn btn-danger btn-floating me-3">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button class="btn btn-warning btn-floating me-3">
+        <i class="fab fa-github"></i>
+      </button>
+      <button class="btn-floating btn btn-success me-3">
+        <i class="fab fa-dribbble"></i>
+      </button>
+      <button class="btn-floating btn btn-dark me-3">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+      <button class="btn-floating btn btn-info">
+        <i class="fab fa-pinterest"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="copyright text-center p-3"
+  style="background: rgba(34, 74, 145, 0.3)">
+    © 2022 Copyright: MDBootstrap.com
+  </div>
+</footer>
+
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+
